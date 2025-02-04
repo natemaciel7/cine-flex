@@ -81,7 +81,7 @@ function Success() {
       
       <ContentContainer>
         <InfoSection>
-          <h3>Filme e Sessão</h3>
+          <h3>Filme e sessão</h3>
           <p>{sessionData.movie.title}</p>
           <p>{sessionData.day.date} às {sessionData.name}</p>
         </InfoSection>
