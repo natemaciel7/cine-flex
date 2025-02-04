@@ -28,7 +28,8 @@ const HeaderContainer = styled.header`
   h1 {
     display: inline;
     font-size: 40px;
-    
+    font-family: 'Raleway', sans-serif;
+
   }
 `;
 

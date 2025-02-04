@@ -5,17 +5,18 @@ import axios from 'axios';
 import styled from 'styled-components';
 
 const SessionsContainer = styled.div`
+  font-family: "Sarala", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #1c1c1e;
   min-height: 100vh;
   padding: 20px;
 `;
 
 const DayContainer = styled.div`
-background-color: #2B2D36;
+  font-family: "Sarala", sans-serif;
+  background-color: #2B2D36;
   width: 100%;
   max-width: 300px;
   padding: 15px;
@@ -23,8 +24,15 @@ background-color: #2B2D36;
   margin-bottom: 15px;
   text-align: center;
 
+  h2 {
+  margin: '20px 0';
+     
+  }
+
+
   `;
   const TimeContainer = styled.div`
+  font-family: "Sarala", sans-serif;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -66,7 +74,7 @@ function Sessions() {
 
   return (
     <SessionsContainer>
-      <h2 style={{ fontFamily: 'Sarala, sans-serif', textAlign: 'center'}}>Selecione o horário</h2>
+      <h2 style={{ fontFamily: 'Sarala, sans-serif', textAlign: 'center', }}>Selecione o horário</h2>
       {movieData.days.map(day => (
         <DayContainer key={day.id}>
           <p>{day.weekday}, {day.date}</p>

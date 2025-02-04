@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Sarala:wght@400;700&display=swap');
@@ -6,17 +6,16 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
   }
 
   body {
-    background-color: #212226;
-    color: #FFFFFF;
+    font-family: 'Sarala', sans-serif;
+    background-color: #1C1C1E;
+    color: white;
   }
 
-  h2 {
-    font-family: Sarala;
-  }
+  
 `;
 
 export default GlobalStyle;
